@@ -1,18 +1,5 @@
 from datetime import datetime, timedelta
 
-users = [{"name": "Artem", "birthday": datetime(1995, 9, 23)},
-         {"name": "Olia", "birthday": datetime(1998, 12, 24)},
-         {"name": "Vicor", "birthday": datetime(1997, 7, 14)},
-         {"name": "Maria", "birthday": datetime(1998, 9, 17)},
-         {"name": "Mikola", "birthday": datetime(1994, 11, 25)},
-         {"name": "Tomas", "birthday": datetime(1990, 9, 23)},
-         {"name": "Justin", "birthday": datetime(2000, 9, 5)},
-         {"name": "Maya", "birthday": datetime(2003, 12, 9)},
-         {"name": "Dima", "birthday": datetime(1988, 9, 27)},
-         {"name": "Liza", "birthday": datetime(1978, 9, 25)},
-         {"name": "Vlad", "birthday": datetime(1999, 1, 29)},
-         {"name": "Kiril", "birthday": datetime(2004, 3, 27)}]
-
 week_days = {"Monday": [], "Tuesday": [],
              "Wednesday": [], "Thursday": [], "Friday": []}
 
