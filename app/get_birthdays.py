@@ -7,18 +7,12 @@ pattern = "%Y.%m.%d"
 
 
 def get_birthdays_per_week(users):
-
     for user in users:
-
         name, birthday = user["name"], user["birthday"].strftime("%m.%d")
-
         for date in [(datetime.today() + timedelta(days=i)).strftime(pattern)
                      for i in range(1, 8)]:
-
             if birthday in date:
-
                 date = datetime.strptime(date, pattern)
-
                 if date.isoweekday() <= 5:
                     week_days[date.strftime("%A")].append(name)
                 else:
@@ -27,7 +21,3 @@ def get_birthdays_per_week(users):
     for key, value in week_days.items():
         if value:
             print(f"{key}: {', '.join(value)}")
-
-
-if __name__ == "__main__":
-    get_birthdays_per_week(users)
